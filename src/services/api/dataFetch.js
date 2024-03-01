@@ -5,3 +5,7 @@ export function fetchAllFamilleAnimals() {
     response.json(),
   );
 }
+
+export function ImageElmt(elmt) {
+  return `${BASE_URL}/${elmt}/image`;
+}
