@@ -5,7 +5,7 @@ import FamilleAnimalList from "../views/FamilleAnimalList.jsx";
 function Router() {
   return (
     <Switch>
-      <Route path="/">
+      <Route path="/familles">
         <FamilleAnimalList />
       </Route>
     </Switch>
