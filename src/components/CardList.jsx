@@ -1,7 +1,19 @@
 import PropTypes from "prop-types";
 import FamilleAnimalCard from "./FamilleAnimalCard.jsx";
 
-function CardList({ data = {}, type, ...props }) {}
+function CardList({ data = {}, type, ...props }) {
+  if (type === "familleAnimal") {
+    return (
+      <div className="w-full bg-background-200 pt-12 pb-36">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 w-[90%] lg:w-[70%] m-auto">
+          {data.map((value) => (
+            <FamilleAnimalCard />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}
 
 CardList.PropTypes = {
   data: PropTypes.array,
