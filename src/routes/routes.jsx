@@ -1,7 +1,7 @@
 import { Route, Switch } from "wouter";
 import React from "react";
-import FamilleAnimalList from "../views/FamilleAnimalList.jsx";
-import FamilleAnimalDetails from "../views/FamilleAnimalDetails.jsx";
+import FamilleAnimalList from "../views/familleAnimal/FamilleAnimalList.jsx";
+import FamilleAnimalDetails from "../views/familleAnimal/FamilleAnimalDetails.jsx";
 
 function Router() {
   return (

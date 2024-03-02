@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import CardList from "../components/CardList.jsx";
-import { fetchAllFamilleAnimals } from "../services/api/dataFetch.js";
+import CardList from "../../components/CardList.jsx";
+import { fetchAllFamilleAnimals } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalList() {
   const [familles, setFamilles] = useState([]);
