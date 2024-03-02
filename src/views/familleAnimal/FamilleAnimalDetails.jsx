@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { fetchFamilleAnimalDetails } from "../../services/api/dataFetch.js";
+import FamilleAnimalDetailComponent from "../../components/familleAnimal/FamilleAnimalDetailComponent.jsx";
 
 function FamilleAnimalDetails({ id = null, ...props }) {
   const [detailsFamille, setDetails] = useState({});
@@ -9,6 +10,7 @@ function FamilleAnimalDetails({ id = null, ...props }) {
       setDetails(data);
     });
   }, []);
+  return <FamilleAnimalDetailComponent data={detailsFamille} />;
 }
 
 FamilleAnimalDetails.PropTypes = {
