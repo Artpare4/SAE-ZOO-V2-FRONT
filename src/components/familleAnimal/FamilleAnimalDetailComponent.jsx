@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalDetailComponent({ data = {}, ...props }) {
-  console.log(data);
   return (
     <div className="mt-36 lg:mt-24 ">
       <h1 className="text-center text-secondary-800 text-5xl md:text-5xl  lg:text-6xl lg:text-10xl mb-5">

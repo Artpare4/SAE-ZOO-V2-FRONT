@@ -5,7 +5,6 @@ import { fetchAllFamilleAnimals } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalList() {
   const [familles, setFamilles] = useState([]);
-  console.log("test")
   useEffect(() => {
     fetchAllFamilleAnimals().then((values) => {
       setFamilles(values["hydra:member"]);
