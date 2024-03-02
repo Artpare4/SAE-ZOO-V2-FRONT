@@ -15,3 +15,9 @@ export function fetchFamilleAnimalDetails(idFamille) {
     response.json(),
   );
 }
+
+export function fetchAnimalDetails(idAnimal) {
+  return fetch(`${BASE_URL}/animals/${idAnimal}`).then((reponse) =>
+    reponse.json(),
+  );
+}
