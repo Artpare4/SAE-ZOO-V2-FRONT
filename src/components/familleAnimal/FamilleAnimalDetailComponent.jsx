@@ -31,6 +31,18 @@ function FamilleAnimalDetailComponent({ data = {}, ...props }) {
             <p className="text-primary-100 text-2xl lg:text-xl text-center italic">
               {data.nomScientifique}
             </p>
+            <p className="text-primary-100 text-2xl lg:text-xl text-center font-bold">
+              Espèce
+            </p>
+            {Object.prototype.hasOwnProperty.call(data, "espece") ? (
+              <p className="text-primary-100 text-2xl lg:text-xl text-center">
+                {data.espece.libEspece}
+              </p>
+            ) : (
+              <p className="text-primary-100 text-2xl lg:text-xl text-center">
+                Non renseigné
+              </p>
+            )}
           </div>
           <div className="m-2 bg-secondary-800 rounded-xl p-1">
             <p className="text-primary-100 text-2xl lg:text-xl text-center font-bold">
@@ -44,6 +56,19 @@ function FamilleAnimalDetailComponent({ data = {}, ...props }) {
             </p>
             <p className="text-primary-100 text-2xl lg:text-xl text-center">
               {data.typeAlimentation}{" "}
+            </p>
+            <p className="text-primary-100 text-2xl lg:text-xl text-center font-bold">
+              Habitat
+            </p>
+            <p className="text-primary-100 text-2xl lg:text-xl text-center">
+              {Object.prototype.hasOwnProperty.call(
+                data,
+                "assoHabitatFamilleAnimals",
+              ) && data.assoHabitatFamilleAnimals.length !== 0
+                ? data.assoHabitatFamilleAnimals.map(
+                    (values) => values.habitat.libHabitat,
+                  )
+                : "Non renseigné"}
             </p>
           </div>
           <div className="m-2 bg-secondary-800 rounded-xl p-1">
