@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ImageElmt } from "../services/api/dataFetch.js";
+import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalCard({ data = {}, ...props }) {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import FamilleAnimalCard from "./FamilleAnimalCard.jsx";
-
+import FamilleAnimalCard from "./familleAnimal/FamilleAnimalCard.jsx";
 function CardList({ data = {}, type, ...props }) {
   if (type === "familleAnimal") {
     return (
