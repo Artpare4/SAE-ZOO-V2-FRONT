@@ -10,7 +10,7 @@ export function ImageElmt(elmt) {
   return `${BASE_URL}/${elmt}/image`;
 }
 
-export function getFamilleAnimalDetails(idFamille) {
+export function fetchFamilleAnimalDetails(idFamille) {
   return fetch(`${BASE_URL}/famille_animals/${idFamille}`).then((response) =>
     response.json(),
   );
