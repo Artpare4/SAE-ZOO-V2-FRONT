@@ -9,3 +9,9 @@ export function fetchAllFamilleAnimals() {
 export function ImageElmt(elmt) {
   return `${BASE_URL}/${elmt}/image`;
 }
+
+export function getFamilleAnimalDetails(idFamille) {
+  return fetch(`${BASE_URL}/famille_animals/${idFamille}`).then((response) =>
+    response.json(),
+  );
+}
