@@ -14,6 +14,6 @@ function FamilleAnimalDetails({ id = null, ...props }) {
 }
 
 FamilleAnimalDetails.PropTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
 };
 export default FamilleAnimalDetails;
