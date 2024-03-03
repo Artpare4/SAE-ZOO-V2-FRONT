@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import FamilleAnimalCard from "./familleAnimal/FamilleAnimalCard.jsx";
+import ZoneParcCard from "./zoneParc/ZoneParcCard.jsx";
+
 function CardList({ data = {}, type, ...props }) {
   if (type === "familleAnimal") {
     return (
@@ -10,6 +12,15 @@ function CardList({ data = {}, type, ...props }) {
             <FamilleAnimalCard data={value} />
           ))}
         </div>
+      </div>
+    );
+  }
+  if (type === "zoneParc") {
+    return (
+      <div className="grid grid-cols-2">
+        {data.map((value) => (
+          <ZoneParcCard data={value} />
+        ))}
       </div>
     );
   }
