@@ -10,7 +10,11 @@ function AnimalDetails({ id, ...props }) {
       setAnimal(data);
     });
   }, []);
-  return <AnimalDetailComponent data={animal}/>
+  return (
+    <div className="mt-36 lg:mt-24 ml-6 mr-6 mb-64">
+      <AnimalDetailComponent data={animal} />
+    </div>
+  );
 }
 
 export default AnimalDetails;
