@@ -6,7 +6,7 @@ function ZoneParcList() {
   const [zones, setZones] = useState([]);
   useEffect(() => {
     fetchAllZoneParc().then((values) => {
-      setZones(values);
+      setZones(values["hydra:member"]);
     });
   }, []);
   return (
