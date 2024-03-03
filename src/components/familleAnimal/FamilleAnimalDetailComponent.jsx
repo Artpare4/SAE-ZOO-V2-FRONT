@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "wouter";
 import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalDetailComponent({ data = {}, ...props }) {
@@ -88,18 +89,20 @@ function FamilleAnimalDetailComponent({ data = {}, ...props }) {
           {Object.prototype.hasOwnProperty.call(data, "animals") &&
           data.animals.length !== 0 ? (
             data.animals.map((values) => (
-              <div className="flex flex-row m-2 p-2 bg-secondary-800/70 rounded-2xl text-text-50 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">
-                <img
-                  className="w-96  bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s p-2 rounded-2xl"
-                  src={ImageElmt(`animals/${values.id}`)}
-                  alt={`Image de ${values.nomAnimal}`}
-                />
-                <div className="flex  flex-col justify-center ml-3 w-[100%]">
-                  <p className="text-center text-primary-100 text-4xl lg:text-10xl">
-                    {values.nomAnimal}
-                  </p>
+              <Link href={`/animal/${values.id}`}>
+                <div className="flex flex-row m-2 p-2 bg-secondary-800/70 rounded-2xl text-text-50 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">
+                  <img
+                    className="w-96  bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s p-2 rounded-2xl"
+                    src={ImageElmt(`animals/${values.id}`)}
+                    alt={`Image de ${values.nomAnimal}`}
+                  />
+                  <div className="flex  flex-col justify-center ml-3 w-[100%]">
+                    <p className="text-center text-primary-100 text-4xl lg:text-10xl">
+                      {values.nomAnimal}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))
           ) : (
             <p className="text-center text-xl">Pas d'animaux renseigné</p>
