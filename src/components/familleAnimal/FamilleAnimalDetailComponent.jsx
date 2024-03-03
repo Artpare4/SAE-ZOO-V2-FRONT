@@ -5,7 +5,7 @@ import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function FamilleAnimalDetailComponent({ data = {}, ...props }) {
   return (
-    <div className="mt-36 lg:mt-24 ">
+    <>
       <h1 className="text-center text-secondary-800 text-5xl md:text-5xl  lg:text-6xl lg:text-10xl mb-5">
         {data.nomFamilleAnimal}
       </h1>
@@ -109,7 +109,7 @@ function FamilleAnimalDetailComponent({ data = {}, ...props }) {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

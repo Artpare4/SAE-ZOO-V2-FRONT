@@ -10,7 +10,11 @@ function FamilleAnimalDetails({ id = null, ...props }) {
       setDetails(data);
     });
   }, []);
-  return <FamilleAnimalDetailComponent data={detailsFamille} />;
+  return (
+    <div className="mt-36 lg:mt-24 ">
+      <FamilleAnimalDetailComponent data={detailsFamille} />
+    </div>
+  );
 }
 
 FamilleAnimalDetails.PropTypes = {
