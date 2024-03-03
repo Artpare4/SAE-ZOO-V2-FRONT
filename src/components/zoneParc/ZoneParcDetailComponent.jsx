@@ -12,7 +12,7 @@ function ZoneParcDetailComponent({ data = {}, ...props }) {
         <div className="flex justify-center">
           <img
             className="w-[100%] rounded-2xl"
-            src={ImageElmt(`zone_parc/${data.id}`)}
+            src={ImageElmt(`zone_parcs/${data.id}`)}
           />
         </div>
       </div>
