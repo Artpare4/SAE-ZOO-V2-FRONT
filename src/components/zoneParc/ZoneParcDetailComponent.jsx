@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ZoneParcDetail from "../../views/zoneParc/ZoneParcDetail.jsx";
 import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function ZoneParcDetailComponent({ data = {}, ...props }) {
@@ -23,6 +22,6 @@ function ZoneParcDetailComponent({ data = {}, ...props }) {
 
 export default ZoneParcDetailComponent;
 
-ZoneParcDetail.PropTypes = {
+ZoneParcDetailComponent.PropTypes = {
   data: PropTypes.array,
 };
