@@ -32,6 +32,6 @@ export function fetchZoneParcDetail(idZone) {
   );
 }
 
-export function fetchALLEvent() {
+export function fetchAllEvent() {
   return fetch(`${BASE_URL}/events`).then((response) => response.json());
 }
