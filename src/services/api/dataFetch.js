@@ -25,3 +25,9 @@ export function fetchAnimalDetails(idAnimal) {
 export function fetchAllZoneParc() {
   return fetch(`${BASE_URL}/zone_parcs`).then((response) => response.json());
 }
+
+export function fetchZoneParcDetail(idZone) {
+  return fetch(`${BASE_URL}/zone_parcs/${idZone}`).then((response) =>
+    response.json(),
+  );
+}
