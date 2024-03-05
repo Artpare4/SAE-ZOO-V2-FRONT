@@ -5,6 +5,7 @@ import FamilleAnimalDetails from "../views/familleAnimal/FamilleAnimalDetails.js
 import AnimalDetails from "../views/animal/AnimalDetails.jsx";
 import ZoneParcList from "../views/zoneParc/ZoneParcList.jsx";
 import ZoneParcDetail from "../views/zoneParc/ZoneParcDetail.jsx";
+import EventList from "../views/event/EventList.jsx";
 
 function Router() {
   return (
@@ -23,6 +24,9 @@ function Router() {
       </Route>
       <Route path="/zones/:id">
         {(params) => <ZoneParcDetail id={params.id} />}
+      </Route>
+      <Route path="/events">
+        <EventList />
       </Route>
     </Switch>
   );
