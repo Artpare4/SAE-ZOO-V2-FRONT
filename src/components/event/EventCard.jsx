@@ -6,7 +6,7 @@ function EventCard({ data = {}, ...props }) {
   return (
     <div className="flex flex-row m-2 p-2 bg-secondary-800/70 rounded-2xl text-text-50 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">
       <img
-        className="object-contain"
+        className="w-96  bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s p-2 rounded-2xl"
         src={ImageElmt(`events/${data.id}`)}
         alt="Image de {{ event.nomEvent }}"
       />
