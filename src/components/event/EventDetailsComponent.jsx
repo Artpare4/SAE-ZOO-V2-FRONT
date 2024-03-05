@@ -37,10 +37,19 @@ function EventDetailsComponent({ data = {}, ...props }) {
             <h2 className="border-b-2 text-3xl text-secondary-800 ">
               Les dates prochaines:{" "}
             </h2>
-            <div className="flex flex-row m-4 bg-secondary-800/60 p-3 w-fit rounded-2xl">
-              <p className="text-center mr-4" />
-              <p>h</p>
-            </div>
+
+            {Object.prototype.hasOwnProperty.call(data, "datesEvent") &&
+            data.datesEvent.length !== 0 ? (
+              data.datesEvent.map((values) => (
+                <div className="flex flex-row m-2 bg-secondary-800/60 p-3 w-fit rounded-2xl">
+                  <p className="text-center mr-4">
+                    {values.dateEvent.dateEvent.substring(0, 10)}
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p>Pas de dates prévu pour l'instant</p>
+            )}
           </div>
         </div>
       </div>
