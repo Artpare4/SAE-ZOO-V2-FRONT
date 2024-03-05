@@ -25,7 +25,7 @@ function Router() {
       <Route path="/zones/:id">
         {(params) => <ZoneParcDetail id={params.id} />}
       </Route>
-      <Route path="events">
+      <Route path="/events">
         <EventList />
       </Route>
     </Switch>
