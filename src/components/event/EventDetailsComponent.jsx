@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import EventDetails from "../../views/event/EventDetails.jsx";
+
 import { ImageElmt } from "../../services/api/dataFetch.js";
 
 function EventDetailsComponent({ data = {}, ...props }) {
@@ -50,6 +50,6 @@ function EventDetailsComponent({ data = {}, ...props }) {
 
 export default EventDetailsComponent;
 
-EventDetails.PropTypes = {
+EventDetailsComponent.PropTypes = {
   data: PropTypes.array,
 };
