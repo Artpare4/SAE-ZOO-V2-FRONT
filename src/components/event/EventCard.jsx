@@ -8,7 +8,7 @@ function EventCard({ data = {}, ...props }) {
       <img
         className="w-96  bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s p-2 rounded-2xl"
         src={ImageElmt(`events/${data.id}`)}
-        alt="Image de {{ event.nomEvent }}"
+        alt={`Image de ${data.nomEvent}`}
       />
       <div className=" pl-4 flex flex-col grow">
         <p className="eventName text-primary-50 text-6xl lg:text-4xl ">
