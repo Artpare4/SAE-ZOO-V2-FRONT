@@ -16,7 +16,7 @@ function App() {
             le parc</a>
           <a href="/events"
              className="mt-3 p-4 bg-secondary-800/50  text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Évènements</a>
-          <a href="familles"
+          <a href="/familles"
              className="mt-3 p-4 bg-secondary-800/50  text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Nos
             animaux</a>
         </div>
@@ -24,13 +24,13 @@ function App() {
                                                             src="src/assets/LogoZoo.png"
                                                             alt="Logo du Zoo Parc de Laval"/></a>
         <div className="btn-container flex justify-between gap-6">
-          <a href="zones"
+          <a href="/zones"
              className="mt-3 p-4 bg-secondary-800/50  text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Nos
             espaces</a>
-          <a href="login"
+          <a href="/login"
              className="mt-3 p-4 bg-secondary-800/50  text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Votre
             compte</a>
-          <a href="reservation"
+          <a href="/reservation"
              className="mt-3 p-4 bg-primary-500/50 text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Réservez
             vos billets</a>
         </div>
