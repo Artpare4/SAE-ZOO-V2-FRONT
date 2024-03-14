@@ -22,8 +22,10 @@ export function fetchAnimalDetails(idAnimal) {
   );
 }
 
-export function fetchAllZoneParc() {
-  return fetch(`${BASE_URL}/zone_parcs`).then((response) => response.json());
+export function fetchAllZoneParc(urlParams = URLSearchParams) {
+  return fetch(`${BASE_URL}/zone_parcs?page=${urlParams.get("page")}`).then(
+    (response) => response.json(),
+  );
 }
 
 export function fetchZoneParcDetail(idZone) {
