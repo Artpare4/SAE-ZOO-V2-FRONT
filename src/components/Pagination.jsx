@@ -1,5 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faForwardStep,
+  faForwardFast,
+  faBackwardStep,
+  faBackwardFast,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Pagination({ pagination, setPage, ...props }) {
   return (
@@ -10,7 +17,7 @@ function Pagination({ pagination, setPage, ...props }) {
         }}
         disabled={pagination.first == null}
       >
-        {pagination.first}
+        <FontAwesomeIcon icon={faBackwardFast} />
       </button>
       <button
         onClick={() => {
@@ -18,7 +25,7 @@ function Pagination({ pagination, setPage, ...props }) {
         }}
         disabled={pagination.previous == null}
       >
-        {pagination.previous}
+        <FontAwesomeIcon icon={faBackwardStep} />
       </button>
       <button
         onClick={() => {
@@ -26,7 +33,7 @@ function Pagination({ pagination, setPage, ...props }) {
         }}
         disabled={pagination.next == null}
       >
-        {pagination.next}
+        <FontAwesomeIcon icon={faForwardStep} />
       </button>
       <button
         onClick={() => {
@@ -34,7 +41,7 @@ function Pagination({ pagination, setPage, ...props }) {
         }}
         disabled={pagination.last == null}
       >
-        {pagination.last}
+        <FontAwesomeIcon icon={faForwardFast} />
       </button>
     </>
   );
