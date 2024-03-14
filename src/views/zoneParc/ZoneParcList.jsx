@@ -19,10 +19,10 @@ function ZoneParcList() {
   }, [page]);
   return (
     <div className="flex flex-col mt-36 lg:mt-24 w-[70%] m-auto pb-36">
-      <Pagination setPage={setPage} pagination={pagination} />
       <h1 className="text-center text-secondary-800 text-5xl md:text-5xl  lg:text-6xl lg:text-10xl mb-5">
         Les zones du parc
       </h1>
+      <Pagination setPage={setPage} pagination={pagination} />
       <CardList data={zones} type="zoneParc" />
     </div>
   );
