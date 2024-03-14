@@ -10,40 +10,44 @@ import {
 
 function Pagination({ pagination, setPage, ...props }) {
   return (
-    <>
+    <div className="flex justify-evenly">
       <button
+        className="bg-secondary-800"
         onClick={() => {
           setPage(pagination.first);
         }}
         disabled={pagination.first == null}
       >
-        <FontAwesomeIcon icon={faBackwardFast} />
+        <FontAwesomeIcon className="text-primary-100" icon={faBackwardFast} />
       </button>
       <button
+        className="bg-secondary-800"
         onClick={() => {
           setPage(pagination.previous);
         }}
         disabled={pagination.previous == null}
       >
-        <FontAwesomeIcon icon={faBackwardStep} />
+        <FontAwesomeIcon className="text-primary-100" icon={faBackwardStep} />
       </button>
       <button
+        className="bg-secondary-800"
         onClick={() => {
           setPage(pagination.next);
         }}
         disabled={pagination.next == null}
       >
-        <FontAwesomeIcon icon={faForwardStep} />
+        <FontAwesomeIcon className="text-primary-100" icon={faForwardStep} />
       </button>
       <button
+        className="bg-secondary-800"
         onClick={() => {
           setPage(pagination.last);
         }}
         disabled={pagination.last == null}
       >
-        <FontAwesomeIcon icon={faForwardFast} />
+        <FontAwesomeIcon className="text-primary-100" icon={faForwardFast} />
       </button>
-    </>
+    </div>
   );
 }
 
