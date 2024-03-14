@@ -34,8 +34,10 @@ export function fetchZoneParcDetail(idZone) {
   );
 }
 
-export function fetchAllEvent() {
-  return fetch(`${BASE_URL}/events`).then((response) => response.json());
+export function fetchAllEvent(urlParams = URLSearchParams) {
+  return fetch(`${BASE_URL}/events?page=${urlParams.get("page")}`).then(
+    (response) => response.json(),
+  );
 }
 
 export function fetchEventDetail(idEvent) {
