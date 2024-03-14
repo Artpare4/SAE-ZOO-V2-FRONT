@@ -6,10 +6,14 @@ import AnimalDetails from "../views/animal/AnimalDetails.jsx";
 import ZoneParcList from "../views/zoneParc/ZoneParcList.jsx";
 import ZoneParcDetail from "../views/zoneParc/ZoneParcDetail.jsx";
 import EventList from "../views/event/EventList.jsx";
+import Index from "../views/index/Index.jsx";
 
 function Router() {
   return (
     <Switch>
+      <Route path="/">
+        <Index />
+      </Route>
       <Route path="/familles">
         <FamilleAnimalList />
       </Route>

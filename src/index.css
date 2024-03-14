@@ -184,6 +184,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.bg-lion {
+  background-image: url('src/assets/lion.png');
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
