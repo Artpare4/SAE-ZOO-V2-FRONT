@@ -45,3 +45,19 @@ export function fetchEventDetail(idEvent) {
     response.json(),
   );
 }
+
+export function getMe() {
+  return fetch(`${BASE_URL}/me`, { credentials: "include" }).then(
+    (response) => {
+      if (response.ok) return response.json();
+      return null;
+    },
+  );
+}
+export function loginUrl() {
+  return `${BASE_URL}/login?redirect=${encodeURIComponent(location)}`;
+}
+
+export function logoutUrl() {
+  return `${BASE_URL}/logout?redirect=${encodeURIComponent(location)}`;
+}
