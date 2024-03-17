@@ -55,9 +55,9 @@ export function getMe() {
   );
 }
 export function loginUrl() {
-  return `${BASE_URL}/login?redirect=${encodeURIComponent(location)}`;
+  return `http://127.0.0.1:8000/login?redirect=${encodeURIComponent(location)}`;
 }
 
 export function logoutUrl() {
-  return `${BASE_URL}/logout?redirect=${encodeURIComponent(location)}`;
+  return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location)}`;
 }
