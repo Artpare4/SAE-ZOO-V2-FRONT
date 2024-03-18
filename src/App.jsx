@@ -1,7 +1,7 @@
 import "./App.css";
 import Router from "./routes/routes.jsx";
 import Provider from "./contexts/user/Provider.jsx";
-import Header from "./views/Header.jsx";
+import Header from "./components/Header.jsx";
 
 function App() {
   return (
