@@ -6,7 +6,7 @@ function UserDetailsComponent({ data = {}, ...props }) {
   console.log(data.reservations);
   return (
     <div className="main flex flex-col">
-      <h1 className="text-center text-8xl lg:text-6xl mt-36 lg:mt-24 mb-5">
+      <h1 className="text-center text-8xl lg:text-6xl mt-10 mb-5 text-secondary-800">
         Votre compte
       </h1>
       <div className="flex justify-center ">
