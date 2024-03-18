@@ -41,7 +41,7 @@ function Header() {
       <a href="/" className="logo h-20 lg:h-10 pt-1">
         <img
           className="h-20 lg:h-10 pt-1"
-          src="../assets/LogoZoo.png"
+          src="src/assets/LogoZoo.png"
           alt="Logo du Zoo Parc de Laval"
         />
       </a>
