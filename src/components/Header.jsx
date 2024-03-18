@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 // eslint-disable-next-line import/extensions
-import {loginUrl} from "../services/api/dataFetch.js";
+import { loginUrl } from "../services/api/dataFetch.js";
+import { userContext } from "../contexts/user/index.js";
 
 function Header() {
+  const user = useContext(userContext);
+  let url = "";
+  if (user != null && user !== undefined) {
+    url = "/user";
+  } else {
+    url = loginUrl();
+  }
   return (
     <header
       id="header"
@@ -45,7 +53,7 @@ function Header() {
           Nos espaces
         </a>
         <a
-          href={loginUrl()}
+          href={url}
           className="mt-3 p-4 bg-secondary-800/50  text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s"
         >
           Votre compte
