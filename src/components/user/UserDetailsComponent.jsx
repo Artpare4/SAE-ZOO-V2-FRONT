@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import UserReservationList from "./reservation/UserReservationList.jsx";
 
 function UserDetailsComponent({ data = {}, ...props }) {
+  console.log(data.reservations);
   return (
     <div className="main flex flex-col">
       <h1 className="text-center text-8xl lg:text-6xl mt-36 lg:mt-24 mb-5">
@@ -43,6 +45,13 @@ function UserDetailsComponent({ data = {}, ...props }) {
           </div>
         </div>
       </div>
+      {data.reservations ? (
+        <UserReservationList data={data.reservations} />
+      ) : (
+        <h1 className="text-center text-8xl lg:text-6xl mt-6 lg:mt-24 mb-2 text-secondary-800">
+          Vous n'avez pas de réservation
+        </h1>
+      )}
     </div>
   );
 }
