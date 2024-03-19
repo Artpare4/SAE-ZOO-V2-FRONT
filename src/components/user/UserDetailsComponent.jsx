@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UserReservationList from "./reservation/UserReservationList.jsx";
+import LogoutButton from "../button/LogoutButton.jsx";
 
 function UserDetailsComponent({ data = {}, ...props }) {
   console.log(data.reservations);
@@ -42,6 +43,9 @@ function UserDetailsComponent({ data = {}, ...props }) {
             <p className="text-2xl lg:text-3xl text-secondary-50 p-3 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s rounded-2xl">
               {data.phoneUser}
             </p>
+          </div>
+          <div className="flex justify-center mt-5 pb-20">
+            <LogoutButton />
           </div>
         </div>
       </div>
