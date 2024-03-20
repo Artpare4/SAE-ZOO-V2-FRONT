@@ -59,5 +59,5 @@ export function loginUrl() {
 }
 
 export function logoutUrl() {
-  return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location)}`;
+  return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location.origin)}`;
 }
