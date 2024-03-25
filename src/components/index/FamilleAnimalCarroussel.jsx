@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
-import Card from "./Card.jsx";
-import {useState} from "react";
 import {ImageElmt} from "../../services/api/dataFetch.js";
+import FamilleAnimalCard from "./FamilleAnimalCard.jsx";
 
 function FamilleAnimalCarroussel({data})
 {
   return (
     <div className="flex px-3 flex-row gap-6">
       {data.map((cardData, index) => {
-        return <Card title={cardData.nomFamilleAnimal}
+        return <FamilleAnimalCard title={cardData.nomFamilleAnimal}
                      description={cardData.nomScientifique.length > 100
                        ? cardData.nomScientifique.substring(0, 100)+"..."
                        : cardData.nomScientifique}

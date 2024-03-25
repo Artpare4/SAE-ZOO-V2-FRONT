@@ -41,8 +41,8 @@ function Index() {
       </div>
 
       <div className="flex flex-col grow">
-        <div className="bg-secondary-800 grow">
-          <h1 className="text-text-50 text-center text-8xl lg:text-4xl mt-3 mb-6">Nos Animaux</h1>
+        <div className="bg-background-100 grow">
+          <h1 className="text-text-950 text-center text-8xl lg:text-4xl mt-3 mb-6">Nos Animaux</h1>
           <div className="flex overflow-x-scroll pb-10 hide-scroll-bar ">
             <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 ">
               <FamilleAnimalCarroussel data={animals}/>
