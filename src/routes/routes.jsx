@@ -7,6 +7,9 @@ import ZoneParcList from "../views/zoneParc/ZoneParcList.jsx";
 import ZoneParcDetail from "../views/zoneParc/ZoneParcDetail.jsx";
 import EventList from "../views/event/EventList.jsx";
 import Index from "../views/index/Index.jsx";
+import EventDetails from "../views/event/EventDetails.jsx";
+import Error from "../views/Error/Error.jsx";
+import UserDetails from "../views/user/UserDetails.jsx";
 
 function Router() {
   return (
@@ -31,6 +34,15 @@ function Router() {
       </Route>
       <Route path="/events">
         <EventList />
+      </Route>
+      <Route path="/events/:id">
+        {(params) => <EventDetails id={params.id} />}
+      </Route>
+      <Route path="/user">
+        <UserDetails />
+      </Route>
+      <Route>
+        <Error />
       </Route>
     </Switch>
   );
