@@ -1,9 +1,9 @@
 export const BASE_URL = "http://127.0.0.1:8000/api";
 
-export function fetchAllFamilleAnimals() {
-  return fetch(`${BASE_URL}/famille_animals`).then((response) =>
-    response.json(),
-  );
+export function fetchAllFamilleAnimals(urlParams = URLSearchParams) {
+  return fetch(
+    `${BASE_URL}/famille_animals?page=${urlParams.get("page")}`,
+  ).then((response) => response.json());
 }
 
 export function ImageElmt(elmt) {
@@ -22,8 +22,10 @@ export function fetchAnimalDetails(idAnimal) {
   );
 }
 
-export function fetchAllZoneParc() {
-  return fetch(`${BASE_URL}/zone_parcs`).then((response) => response.json());
+export function fetchAllZoneParc(urlParams = URLSearchParams) {
+  return fetch(`${BASE_URL}/zone_parcs?page=${urlParams.get("page")}`).then(
+    (response) => response.json(),
+  );
 }
 
 export function fetchZoneParcDetail(idZone) {
@@ -32,6 +34,30 @@ export function fetchZoneParcDetail(idZone) {
   );
 }
 
-export function fetchAllEvent() {
-  return fetch(`${BASE_URL}/events`).then((response) => response.json());
+export function fetchAllEvent(urlParams = URLSearchParams) {
+  return fetch(`${BASE_URL}/events?page=${urlParams.get("page")}`).then(
+    (response) => response.json(),
+  );
+}
+
+export function fetchEventDetail(idEvent) {
+  return fetch(`${BASE_URL}/events/${idEvent}`).then((response) =>
+    response.json(),
+  );
+}
+
+export function getMe() {
+  return fetch(`${BASE_URL}/me`, { credentials: "include" }).then(
+    (response) => {
+      if (response.ok) return response.json();
+      return null;
+    },
+  );
+}
+export function loginUrl() {
+  return `http://127.0.0.1:8000/login?redirect=${encodeURIComponent(location)}`;
+}
+
+export function logoutUrl() {
+  return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location.origin)}`;
 }
