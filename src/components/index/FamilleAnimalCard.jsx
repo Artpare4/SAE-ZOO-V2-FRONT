@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function EventCard({image, title, description}) {
+function FamilleAnimalCard({image, title, description}) {
   return (
     <div
       className="flex flex-col w-96 content-center m-3 rounded-3xl pt-2 pl-2 pr-2 bg-secondary-800/60 backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">
@@ -17,15 +17,15 @@ function EventCard({image, title, description}) {
 );
 }
 
-EventCard.propTypes = {
+FamilleAnimalCard.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string
 }
-EventCard.defaultProps = {
+FamilleAnimalCard.defaultProps = {
   image: "https://via.placeholder.com/150",
   title: "Titre",
   description: "Description"
 }
 
-export default EventCard;
+export default FamilleAnimalCard;
