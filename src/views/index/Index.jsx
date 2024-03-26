@@ -9,8 +9,8 @@ function Index() {
   const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
-    fetchAllEvent().then(data => setEvents(data['hydra:member']));
-    fetchAllFamilleAnimals().then(data => setAnimals(data['hydra:member']));
+    fetchAllEvent(new URLSearchParams('page=1')).then(data => setEvents(data['hydra:member']));
+    fetchAllFamilleAnimals(new URLSearchParams('page=1')).then(data => setAnimals(data['hydra:member']));
   }, []);
 
   return (
