@@ -186,5 +186,5 @@ button:focus-visible {
 }
 
 .bg-lion {
-  background-image: url('src/assets/lion.png');
+  background-image: url('/lion.png');
 }
