@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  web:
+    restart: always
+    image: ${IMAGE_NAME:? is not set or is empty}:${IMAGE_VERSION}
+    ports:
+      - "8085:80"
