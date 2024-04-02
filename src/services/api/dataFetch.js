@@ -1,4 +1,6 @@
-export const BASE_URL = "http://127.0.0.1:8000/api";
+const { API_PORT } = "5173";
+
+export const BASE_URL = `http://127.0.0.1:${API_PORT}/api`;
 
 export function fetchAllFamilleAnimals(urlParams = URLSearchParams) {
   return fetch(
