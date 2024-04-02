@@ -61,3 +61,7 @@ export function loginUrl() {
 export function logoutUrl() {
   return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location.origin)}`;
 }
+
+export function CrudUrl() {
+  return `http://127.0.0.1:8000/admin`;
+}
