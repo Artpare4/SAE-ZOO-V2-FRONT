@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import {ImageElmt} from "../../services/api/dataFetch.js";
 import FamilleAnimalCard from "./FamilleAnimalCard.jsx";
+import React from "react";
+
 
 function FamilleAnimalCarroussel({data})
 {

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import {ImageElmt} from "../../services/api/dataFetch.js";
 import EventCard from "./EventCard.jsx";
+import React from "react";
+
 
 function EventCarroussel({data})
 {
