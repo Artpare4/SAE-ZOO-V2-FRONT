@@ -3,7 +3,7 @@ import AccountButton from "./button/AccountButton.jsx";
 
 function Header() {
   let mobileHeader =  (
-    <header id="header" className="fixed flex justify-between z-10 w-full text-text-50">
+    <header id="header" className="fixed flex justify-between z-10 w-full text-text-50 top-0">
         <div className="bg-secondary-800/50 w-full absolute h-24 lg:h-12 z-[-1] bg-clip-padding  backdrop-filter backdrop-blur-sm border-b border-secondary-50 border-s"></div>
           <div className="my-auto pt-2 h-20 w-20"></div>
               <a href="/" className="logo h-20 lg:h-10 pt-1">
