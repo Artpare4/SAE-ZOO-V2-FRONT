@@ -1,6 +1,6 @@
 const API_PORT = "8000";
-
-export const BASE_URL = `http://localhost:${API_PORT}/api`;
+const BASE_APP = `http://127.0.0.1:${API_PORT}/`;
+export const BASE_URL = `${BASE_APP}api`;
 
 export function fetchAllFamilleAnimals(urlParams = URLSearchParams) {
   return fetch(
@@ -57,9 +57,9 @@ export function getMe() {
   );
 }
 export function loginUrl() {
-  return `http://127.0.0.1:8000/login?redirect=${encodeURIComponent(location)}`;
+  return `${BASE_APP}login?redirect=${encodeURIComponent(location)}`;
 }
 
 export function logoutUrl() {
-  return `http://127.0.0.1:8000/logout?redirect=${encodeURIComponent(location.origin)}`;
+  return `${BASE_APP}logout?redirect=${encodeURIComponent(location.origin)}`;
 }
