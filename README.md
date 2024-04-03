@@ -6,7 +6,7 @@
 ![Static Badge](https://img.shields.io/badge/Status-In_progress-gold)
 ## Description
 
-Ce projet est mené dans la continuité du projet SAÉ 3-01. Il s'agit de développer une application web pour le Zoo Parc de Laval. Cette application permettra aux visiteurs de consulter les informations relatives aux animaux du zoo, aux événements et aux activités proposées. Ainsi, les visiteurs pourront réserver leurs billets.   Elle permettra également aux employés du zoo de gérer les informations relatives aux animaux et aux événements.
+Ce projet fait suite au projet SAÉ 3-01. Son objectif est de développer une application web pour le Zoo Parc de Laval. Cette application permettra aux visiteurs de consulter les informations concernant les animaux du zoo, les événements à venir et les activités proposées. De plus, les visiteurs auront la possibilité de réserver leurs billets en ligne. Pour les employés du zoo, l'application permettra la gestion des informations concernant les animaux et les événements.
 
 ## Installation / Configuration
 
@@ -23,7 +23,7 @@ Ce projet est mené dans la continuité du projet SAÉ 3-01. Il s'agit de dével
 
 #### Lancement du serveur
 
-Pour lancer le serveur, exécutez la commande suivante :
+Pour lancer le serveur, exécuter la commande suivante :
 
 ```bash
 npm run dev
@@ -38,6 +38,6 @@ L'application est accessible à l'adresse suivante : [http://localhost:5173](htt
 - [ ] Page d'accueil [localhost:5173](http://localhost:5173)
 - [ ] Page de présentation des animaux [localhost:5173/familles](http://localhost:5173/familles)
 - [ ] Page de présentation des événements [localhost:5173/events](http://localhost:5173/events)
-- [ ] Page de réservation des billets [localhost:5173/tickets](http://localhost:5173/tickets)
+- [ ] Page de réservation des billets [http://localhost:5173/reservation](http://localhost:5173/reservation)
 - [ ] Page de présentation des zones du parc [localhost:5173/zones](http://localhost:5173/zones)
 - [ ] Page de connexion pour les clients/administrateurs [localhost:5173/login](http://localhost:5173/login)
