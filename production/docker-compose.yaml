@@ -6,6 +6,6 @@ services:
     image: ${IMAGE_NAME:? is not set or is empty}:${IMAGE_VERSION}
     env_file:
       - ./.env
-      - /.env
+      - ./../.env
     ports:
       - "${EXPOSED_PORT}:80"
