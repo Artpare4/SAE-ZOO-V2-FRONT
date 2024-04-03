@@ -1,13 +1,16 @@
 import {fetchAllEvent, fetchAllFamilleAnimals} from "../../services/api/dataFetch.js";
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import FamilleAnimalCarroussel from "../../components/index/FamilleAnimalCarroussel.jsx";
 import EventCarroussel from "../../components/index/EventCarroussel.jsx";
+import IndexCard from "../../components/index/IndexCard.jsx";
+import AdminCard from "../../components/admin/AdminCard.jsx";
+import {userContext} from "../../contexts/user/index.js";
 
 function Index() {
 
   const [events, setEvents] = useState([]);
   const [animals, setAnimals] = useState([]);
-
+  const user= useContext(userContext)
   useEffect(() => {
     fetchAllEvent(new URLSearchParams('page=1')).then(data => setEvents(data['hydra:member']));
     fetchAllFamilleAnimals(new URLSearchParams('page=1')).then(data => setAnimals(data['hydra:member']));
@@ -21,11 +24,11 @@ function Index() {
           <div className="flex justify-center">
             <img className="w-60 lg:w-40" src="src/assets/LogoZoo.png" alt="Logo"/>
           </div>
-          <p className="text-4xl lg:text-2xl text-justify px-2">Découvrez le Zoo Parc de Laval, un joyau de la
-            biodiversité en plein cœur de la Mayenne. Rencontrez des animaux fascinants, vivez des moments uniques en
-            famille et explorez la beauté de la nature. Une aventure inoubliable vous attend&nbsp;!</p>
-          <a className="text-center bg-primary-500  mr-2 rounded-2xl p-2 text-4xl lg:text-2xl" href="">Réservez vos
-            billets</a>
+          {user !== undefined && user.roles.includes("ROLE_ADMIN") ? (
+              <AdminCard />
+          ) : (
+              <IndexCard />
+          )}
         </div>
       </div>
 
