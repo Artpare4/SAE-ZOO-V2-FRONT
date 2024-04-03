@@ -19,7 +19,7 @@ function Index() {
         <div
           className="col-start-2 col-end-12 lg:col-end-7 xl:col-end-6 flex gap-3 flex-col justify-center rounded-3xl lg:rounded-2xl p-4 bg-secondary-50/40 backdrop-filter backdrop-blur-sm self-center border border-secondary-50 border-s">
           <div className="flex justify-center">
-            <img className="w-60 lg:w-40" src="src/assets/LogoZoo.png" alt="Logo"/>
+            <img className="w-60 lg:w-40" src="/LogoZoo.png" alt="Logo"/>
           </div>
           <p className="text-4xl lg:text-2xl text-justify px-2">Découvrez le Zoo Parc de Laval, un joyau de la
             biodiversité en plein cœur de la Mayenne. Rencontrez des animaux fascinants, vivez des moments uniques en
