@@ -82,7 +82,7 @@ function Footer() {
           <a className="text-background-400 text-4xl lg:text-lg">FAQ</a>
         </div>
       </div>
-      <p className="text-background-400 text-center mb-3">
+      <p className="text-background-400 text-center">
         Tous droits réservés ©2024 - Zoo Parc de Laval
       </p>
     </footer>
