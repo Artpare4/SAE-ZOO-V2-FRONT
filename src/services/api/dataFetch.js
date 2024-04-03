@@ -65,5 +65,5 @@ export function logoutUrl() {
 }
 
 export function CrudUrl() {
-  return `http://127.0.0.1:8000/admin`;
+  return `${BASE_APP}admin`;
 }
