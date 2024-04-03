@@ -24,7 +24,7 @@ function Index() {
           <div className="flex justify-center">
             <img className="w-60 lg:w-40" src="/LogoZoo.png" alt="Logo"/>
           </div>
-          {user !== undefined && user.roles.includes("ROLE_ADMIN") ? (
+          {user !== undefined &&  user !== null && user.roles.includes("ROLE_ADMIN") ? (
               <AdminCard />
           ) : (
               <IndexCard />
