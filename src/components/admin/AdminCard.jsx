@@ -8,7 +8,7 @@ function AdminCard() {
       <p className="text-4xl lg:text-2xl px-2 text-center">
         Compte administrateur
       </p>
-      <Link href={CrudUrl}>Accédez au back-office</Link>
+      <a className="text-center bg-primary-500  mr-2 rounded-2xl p-2 text-4xl lg:text-2xl" href={CrudUrl()}>Accédez au back-office</a>
     </>
   );
 }
