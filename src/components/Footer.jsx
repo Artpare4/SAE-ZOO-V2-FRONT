@@ -24,13 +24,13 @@ function Footer() {
           <h2 className="text-background-200 text-6xl lg:text-2xl mb-3 border-b-2 border-background-200 block">
             Ressources
           </h2>
-          <a className="text-background-400 text-4xl lg:text-lg">Billeterie</a>{" "}
+          <a className="text-background-400 text-4xl lg:text-lg" href={'/reservation/create'}>Billeterie</a>{" "}
           <br />
-          <a className="text-background-400 text-4xl lg:text-lg">
+          <a className="text-background-400 text-4xl lg:text-lg" href={'/famille_animal'}>
             Animaux
           </a>{" "}
           <br />
-          <a className="text-background-400 text-4xl lg:text-lg">
+          <a className="text-background-400 text-4xl lg:text-lg" href={'/events'}>
             Programme
           </a>{" "}
           <br />
