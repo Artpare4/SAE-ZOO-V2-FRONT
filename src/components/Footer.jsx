@@ -26,7 +26,7 @@ function Footer() {
           </h2>
           <a className="text-background-400 text-4xl lg:text-lg" href={'/reservation/create'}>Billeterie</a>{" "}
           <br />
-          <a className="text-background-400 text-4xl lg:text-lg" href={'/famille_animal'}>
+          <a className="text-background-400 text-4xl lg:text-lg" href={'/familles'}>
             Animaux
           </a>{" "}
           <br />
