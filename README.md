@@ -41,3 +41,15 @@ L'application est accessible à l'adresse suivante : [http://localhost:5173](htt
 - [ ] Page de réservation des billets [http://localhost:5173/reservation](http://localhost:5173/reservation)
 - [ ] Page de présentation des zones du parc [localhost:5173/zones](http://localhost:5173/zones)
 - [ ] Page de connexion pour les clients/administrateurs [localhost:5173/login](http://localhost:5173/login)
+
+### Users
+
+#### Louise
+- nom de famille: Parent
+- email: louise@example.com
+- password: password
+
+#### Wilfried
+- nom de famille: Noel
+- email: Wil@example.com
+- password: test
