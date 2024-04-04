@@ -67,3 +67,7 @@ export function logoutUrl() {
 export function CrudUrl() {
   return `${BASE_APP}admin`;
 }
+
+export function updateUserUrl() {
+  return `${BASE_APP}user/update?redirect=${encodeURIComponent(location)}`;
+}
