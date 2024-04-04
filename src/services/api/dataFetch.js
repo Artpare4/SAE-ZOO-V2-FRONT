@@ -67,3 +67,7 @@ export function logoutUrl() {
 export function CrudUrl() {
   return `${BASE_APP}admin`;
 }
+
+export function reservationUrl() {
+  return `${BASE_APP}reservation/create`
+}
