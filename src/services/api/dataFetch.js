@@ -69,5 +69,13 @@ export function CrudUrl() {
 }
 
 export function reservationUrl() {
-  return `${BASE_APP}reservation/create`
+  return `${BASE_APP}reservation/create`;
+}
+
+export function reservationDelete(id) {
+  return `${BASE_APP}reservation/delete/${id}`;
+}
+
+export function reservationEvents(id) {
+  return `${BASE_APP}reservation/events/${id}`;
 }
