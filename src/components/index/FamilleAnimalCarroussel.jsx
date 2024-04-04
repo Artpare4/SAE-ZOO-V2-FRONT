@@ -13,7 +13,6 @@ function FamilleAnimalCarroussel({data})
                      description={cardData.nomScientifique.length > 100
                        ? cardData.nomScientifique.substring(0, 100)+"..."
                        : cardData.nomScientifique}
-                        id={cardData.id}
                      image={ImageElmt("famille_animals/"+cardData.id)}
                      key={index}/>
       })}
