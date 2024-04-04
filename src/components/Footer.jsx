@@ -33,8 +33,7 @@ function Footer() {
           <a className="text-background-400 text-4xl lg:text-lg" href={'/events'}>
             Programme
           </a>{" "}
-          <br />
-          <a className="text-background-400 text-4xl lg:text-lg" href={'/user'}>Mon compte</a>
+
         </div>
         <div className="lg:col-start-4">
           <h2 className="text-background-200 text-6xl lg:text-2xl mb-3 border-b-2 border-background-200 block">
