@@ -13,7 +13,7 @@ La partie back-end du projet se trouve à l'adresse :https://iut-info.univ-reims
 ## Installation / Configuration
 
 ### Indication pré-installation
-Nous vous conseillons donc d'importer se projet sur une machine avec un OS de type **Unix** (Mac, linux,...), en effet nous contatons qu'il y a des possibiltés de problèmes lors du lancement du projet sur des machines ayant un OS Windows. 
+Nous vous conseillons donc d'importer ce projet sur une machine avec un OS de type **Unix** (Mac, linux,...), en effet nous constatons qu'il y a des possibilités d'erreurs lors du lancement du projet sur des machines ayant un OS Windows. 
 ### Installation
 
 1. Cloner le projet
@@ -58,6 +58,9 @@ L'application est accessible à l'adresse suivante : [http://localhost:5173](htt
 - email: Wil@example.com
 - password: test
 
-## Site web déployé
+## Adresse du site web déployé
+Nous vous conseillons d'utiliser le navigateur web Firefox pour pouvoir profiter de notre système d'authentification 
+
 Lien site web: http://10.31.33.119:8085/
+
 Lien api: http://10.31.33.119:8000/api
