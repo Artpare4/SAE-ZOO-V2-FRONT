@@ -41,3 +41,21 @@ L'application est accessible à l'adresse suivante : [http://localhost:5173](htt
 - [ ] Page de réservation des billets [localhost:5173/tickets](http://localhost:5173/tickets)
 - [ ] Page de présentation des zones du parc [localhost:5173/zones](http://localhost:5173/zones)
 - [ ] Page de connexion pour les clients/administrateurs [localhost:5173/login](http://localhost:5173/login)
+
+### Docker
+
+#### Dev
+
+Afin de lancer le docker de dev, il suffit d'utiliser une commande dans la racine du projet :
+
+```bash
+docker-compose up
+```
+
+#### Production
+
+De la même manière, en build il suffit de se placer dans le répertoire production et d'effectuer la même commande.
+
+```bash
+docker-compose up
+```
