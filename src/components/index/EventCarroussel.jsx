@@ -13,6 +13,7 @@ function EventCarroussel({data})
                      description={cardData.description.length > 100
                        ? cardData.description.substring(0, 100)+"..."
                        : cardData.description}
+                        id={cardData.id}
                      image={ImageElmt("events/"+cardData.id)}
                      key={index}/>
       })}
