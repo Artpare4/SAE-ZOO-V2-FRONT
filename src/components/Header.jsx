@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import AccountButton from "./button/AccountButton.jsx";
+import { reservationUrl } from "../services/api/dataFetch";
 
 function Header() {
   let mobileHeader =  (
@@ -7,7 +8,7 @@ function Header() {
         <div className="bg-secondary-800/50 w-full absolute h-24 lg:h-12 z-[-1] bg-clip-padding  backdrop-filter backdrop-blur-sm border-b border-secondary-50 border-s"></div>
           <div className="my-auto pt-2 h-20 w-20"></div>
               <a href="/" className="logo h-20 lg:h-10 pt-1">
-                <img className="h-20 lg:h-10 pt-1" src="src/assets/LogoZoo.png" alt="Logo du Zoo Parc de Laval"/>
+                <img className="h-20 lg:h-10 pt-1" src="/LogoZoo.png" alt="Logo du Zoo Parc de Laval"/>
               </a>
                 <svg id="burger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="my-auto pt-2 h-20 w-20 cursor-pointer"
                 onClick={() => {
@@ -21,7 +22,7 @@ function Header() {
                   <a href="/familles" className="p-3 bg-secondary-800/50  bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Nos animaux</a>
                   <a href="/zones" className="p-3 bg-secondary-800/50  bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Nos espaces</a>
                   <AccountButton />
-                  <a href="/reservation" className="p-3 bg-primary-500/50 bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Réservez vos billets</a>
+                  <a href={reservationUrl()} className="p-3 bg-primary-500/50 bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s">Réservez vos billets</a>
                 </div>
       </header>);
 
@@ -65,7 +66,7 @@ function Header() {
         </a>
         <AccountButton />
         <a
-          href="/reservation"
+          href={reservationUrl()}
           className="mt-3 p-4 bg-primary-500/50 text-text-50 rounded-2xl bg-clip-padding  backdrop-filter backdrop-blur-sm border border-secondary-50 border-s"
         >
           Réservez vos billets
@@ -73,7 +74,9 @@ function Header() {
       </div>
     </header>);
 
-  const [header, setHeader] = useState(window.innerWidth > 1024 ? desktopHeader : mobileHeader);
+  const [header, setHeader] = useState(
+    window.innerWidth > 1024 ? desktopHeader : mobileHeader,
+  );
 
   useEffect(() => {
     function handleResize() {
