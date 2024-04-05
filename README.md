@@ -2,14 +2,18 @@
 
 ![Static Badge](https://img.shields.io/badge/BUT-S4-teal)
 ![Static Badge](https://img.shields.io/badge/SAE-401front-green)
-![Static Badge](https://img.shields.io/badge/Symfony-6.3-blue)
+![Static Badge](https://img.shields.io/badge/React-blue)
 ![Static Badge](https://img.shields.io/badge/Status-In_progress-gold)
 ## Description
 
 Ce projet fait suite au projet SAÉ 3-01. Son objectif est de développer une application web pour le Zoo Parc de Laval. Cette application permettra aux visiteurs de consulter les informations concernant les animaux du zoo, les événements à venir et les activités proposées. De plus, les visiteurs auront la possibilité de réserver leurs billets en ligne. Pour les employés du zoo, l'application permettra la gestion des informations concernant les animaux et les événements.
 
+## Partie Back-end
+La partie back-end du projet se trouve à l'adresse :https://iut-info.univ-reims.fr/gitlab/pare0028/sae4-01-api
 ## Installation / Configuration
 
+### Indication pré-installation
+Nous vous conseillons donc d'importer se projet sur une machine avec un OS de type **Unix** (Mac, linux,...), en effet nous contatons qu'il y a des possibiltés de problèmes lors du lancement du projet sur des machines ayant un OS Windows. 
 ### Installation
 
 1. Cloner le projet
@@ -53,3 +57,7 @@ L'application est accessible à l'adresse suivante : [http://localhost:5173](htt
 - nom de famille: Noel
 - email: Wil@example.com
 - password: test
+
+## Site web déployé
+Lien site web: http://10.31.33.119:8085/
+Lien api: http://10.31.33.119:8000/api
