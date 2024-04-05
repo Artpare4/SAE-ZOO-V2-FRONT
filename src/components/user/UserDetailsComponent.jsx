@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import UserReservationList from "./reservation/UserReservationList.jsx";
 import LogoutButton from "../button/LogoutButton.jsx";
 import CrudButton from "../button/CrudButton.jsx";
+import UpdateUserButton from "../button/UpdateUserButton.jsx";
 
 function UserDetailsComponent({ data = {}, ...props }) {
-  console.log(data)
+  console.log(data);
   return (
     <div className="main flex flex-col">
       <h1 className="text-center text-8xl lg:text-6xl mt-10 mb-5 text-secondary-800">
@@ -46,11 +47,14 @@ function UserDetailsComponent({ data = {}, ...props }) {
             </p>
           </div>
           <div className="flex justify-center mt-5 pb-20">
+            <UpdateUserButton />
             <LogoutButton />
-            {data.roles!== undefined && data.roles!==null &&  data.roles.includes("ROLE_ADMIN") ? (
-                <CrudButton />
+            {data.roles !== undefined &&
+            data.roles !== null &&
+            data.roles.includes("ROLE_ADMIN") ? (
+              <CrudButton />
             ) : (
-                <></>
+              <></>
             )}
           </div>
         </div>

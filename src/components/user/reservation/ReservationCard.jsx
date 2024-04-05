@@ -1,4 +1,5 @@
 import React from "react";
+import ReservationButtons from "./ReservationButtons.jsx";
 
 function ReservationCard({ data = {}, ...props }) {
   return (
@@ -33,6 +34,7 @@ function ReservationCard({ data = {}, ...props }) {
           €
         </p>
       </div>
+      <ReservationButtons id={data["@id"].split("/")[3]} />
     </div>
   );
 }
