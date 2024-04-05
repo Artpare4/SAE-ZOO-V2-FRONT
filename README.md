@@ -59,3 +59,5 @@ De la même manière, en build il suffit de se placer dans le répertoire produc
 ```bash
 docker-compose up
 ```
+
+Le projet est déja servi sur l'adresse http://10.31.33.119:8085 sur le réseau de l'IUT.
