@@ -79,3 +79,7 @@ export function reservationDelete(id) {
 export function reservationEvents(id) {
   return `${BASE_APP}reservation/events/${id}`;
 }
+
+export function updateUserUrl() {
+  return `${BASE_APP}user/update?redirect=${encodeURIComponent(location)}`;
+}
